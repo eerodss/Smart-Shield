@@ -128,6 +128,31 @@ const observer = new IntersectionObserver((entries, obs) => {
 
 observer.observe(statsSection);
 
+        // dropdown
+const dropdownLinks =
+    document.querySelectorAll(".dropdown-filter");
+    dropdownLinks.forEach(link => { 
+        link.addEventListener("click", (e) => {
+            e.preventDefault();
+
+const filter = 
+    link.dataset.filter;
+const estaNaPaginaProdutos =
+    document.querySelector(".products-page");
+    if(estaNaPaginaProdutos){
+        filtrarProdutos(filter);
+        document
+        .querySelector("#produtos")
+        .scrollIntoView({
+            behavior:"smooth"
+        });
+    } else{
+        window.location.href =
+        `produtos.html?categoria=${filter}`;
+    }
+        }); 
+    });
+
 
     // identificar os produtos relacionados
 const relacionados = produtos.filter(p =>
