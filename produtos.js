@@ -59,7 +59,7 @@ const produtos = [
         badge:"PREMIUM",
         badgeClass:"badge-premium",
         pagina:"../produtos/individual.html?id=japonesa",
-        imagem:"../imagens/películas/japonesa.png",
+        imagem:"japonesa.png",
         classe:"img-japonesa",
         cta:{
         titulo:"A escolha ideal para quem busca privacidade, acabamento premium e a melhor experiência de proteção disponível.",
@@ -116,7 +116,7 @@ const produtos = [
         badge:"FOSCA",
         badgeClass:"badge-comum",
         pagina:"../base/individual.html?id=basicfosco",
-        imagem:"../imagens/películas/basicfosco.png",
+        imagem:"basicfosco.png",
         classe:"img-basicfosco",
         cta:{
         titulo:"Uma opção equilibrada para quem busca proteção, conforto e ótimo custo-benefício.",
@@ -173,7 +173,7 @@ const produtos = [
         badge:"ESSENCIAL",
         badgeClass:"badge-comum",
         pagina:"../base/individual.html?id=basichd",
-        imagem:"../imagens/películas/basichd.png",
+        imagem:"basichd.png",
         classe:"img-basichd",
         cta:{
         titulo:"Proteção transparente para quem deseja manter a qualidade original da tela.",
@@ -250,7 +250,7 @@ const produtos = [
         badge:"GRIP FOSCO",
         badgeClass:"badge-destaque",
         pagina:"../base/individual.html?id=neofosco",
-        imagem:"../imagens/películas/neogripfosco.png",
+        imagem:"neogripfosco.png",
         classe:"img-neogripfosco",
         cta:{
         titulo:"Mais firmeza, conforto e proteção para a traseira do seu smartphone.",
@@ -318,7 +318,7 @@ const produtos = [
         badge:"EXCLUSIVA",
         badgeClass:"badge-destaque",
         pagina:"../base/individual.html?id=golden",
-        imagem:"../imagens/películas/golden.png",
+        imagem:"golden.png",
         classe:"img-golden",
         cta:{
         titulo:"Transforme a aparência do seu smartphone com um acabamento elegante e exclusivo.",
@@ -376,7 +376,7 @@ const produtos = [
         badge:"ANTIREFLEXO",
         badgeClass:"badge-comum",
         pagina:"../base/individual.html?id=uvfosca",
-        imagem:"../imagens/películas/uvfosca.png",
+        imagem:"uvfosca.png",
         classe:"img-uvfosca",
         cta:{
         titulo:"Reduza reflexos, aumente o conforto visual e aproveite uma experiência de uso superior.",
@@ -433,7 +433,7 @@ const produtos = [
         badge:"CRISTALINA",
         badgeClass:"badge-comum",
         pagina:"../base/individual.html?id=uvhd",
-        imagem:"../imagens/películas/uvhd.png",
+        imagem:"uvhd.png",
         classe:"img-uvfosca",
         cta:{
         titulo:"Preserve a qualidade original da tela com proteção transparente e alta definição.",
@@ -491,7 +491,7 @@ const produtos = [
         badge:"PRIVACIDADE",
         badgeClass:"badge-comum",
         pagina:"../base/individual.html?id=uvprivlisa",
-        imagem:"../imagens/películas/uvprivlisa.png",
+        imagem:"uvprivlisa.png",
         classe:"img-uvprivlisa",
         cta:{
         titulo:"Proteja suas informações sem abrir mão da qualidade e da nitidez da tela.",
@@ -553,7 +553,7 @@ const produtos = [
         badge:"PRIVACIDADE",
         badgeClass:"badge-comum",
         pagina:"../base/individual.html?id=uvprivfosca",
-        imagem:"../imagens/películas/uvprivfosca.png",
+        imagem:"uvprivfosca.png",
         classe:"img-uvprivfosca",
         cta:{
         titulo:"Mais privacidade, menos reflexos e uma experiência de uso muito mais confortável.",
@@ -617,7 +617,7 @@ const produtos = [
         badge:"ESSENCIAL",
         badgeClass:"badge-comum",
         pagina:"../base/individual.html?id=maqb",
-        imagem:"../imagens/maq.png",
+        imagem:"maq.png",
         classe:"img-maqb",
         cta:{
         titulo:"Produza películas com precisão profissional e aumente a eficiência da sua operação.",
@@ -718,7 +718,7 @@ const produtos = [
         badge:"BANCADA",
         badgeClass:"badge-comum",
         pagina:"tapapoio.html", 
-        imagem:"../imagens/tapetep.png",
+        imagem:"tapetep.png",
         classe:"img-tapetep",
         cta:{
         titulo:"Mantenha sua bancada organizada e protegida durante cada instalação.",
@@ -795,7 +795,7 @@ const produtos = [
         badge:"LIMPEZA",
         badgeClass:"badge-comum",
         pagina:"250ml.html",
-        imagem:"../imagens/limpa250.png",
+        imagem:"limpa250.png",
         classe:"img-250",
         cta:{
         titulo:"Mantenha telas e dispositivos sempre limpos com praticidade e segurança.",
@@ -853,7 +853,7 @@ const produtos = [
         badge:"ALTO RENDIMENTO",
         badgeClass:"badge-comum",
         pagina:"500ml.html",
-        imagem:"../imagens/limpa500.png",
+        imagem:"limpa500.png",
         classe:"img-500",
         cta:{
         titulo:"Mais rendimento, mais produtividade e a limpeza profissional que sua bancada precisa.",
