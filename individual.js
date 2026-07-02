@@ -21,7 +21,7 @@ const breadcrumb = document.querySelector("#breadcrumb");
 
 if (breadcrumb) {
     breadcrumb.innerHTML = `
-        <a href="./index.html">Início</a>
+        <a href="index.html">Início</a>
         <span>›</span>
         <a href="produtos.html">Catálogo</a>
         <span>›</span>
