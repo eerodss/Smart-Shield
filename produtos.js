@@ -58,7 +58,7 @@ const produtos = [
         categoria:"peliculas",
         badge:"PREMIUM",
         badgeClass:"badge-premium",
-        pagina:"../produtos/individual.html?id=japonesa",
+        pagina:"individual.html?id=japonesa",
         imagem:"japonesa.png",
         classe:"img-japonesa",
         cta:{
@@ -115,7 +115,7 @@ const produtos = [
         categoria:"peliculas",
         badge:"FOSCA",
         badgeClass:"badge-comum",
-        pagina:"../base/individual.html?id=basicfosco",
+        pagina:"individual.html?id=basicfosco",
         imagem:"basicfosco.png",
         classe:"img-basicfosco",
         cta:{
@@ -172,7 +172,7 @@ const produtos = [
         categoria:"peliculas",
         badge:"ESSENCIAL",
         badgeClass:"badge-comum",
-        pagina:"../base/individual.html?id=basichd",
+        pagina:"individual.html?id=basichd",
         imagem:"basichd.png",
         classe:"img-basichd",
         cta:{
@@ -249,7 +249,7 @@ const produtos = [
         categoria:"peliculas",
         badge:"GRIP FOSCO",
         badgeClass:"badge-destaque",
-        pagina:"../base/individual.html?id=neofosco",
+        pagina:"individual.html?id=neofosco",
         imagem:"neogripfosco.png",
         classe:"img-neogripfosco",
         cta:{
@@ -317,7 +317,7 @@ const produtos = [
         categoria:"peliculas",
         badge:"EXCLUSIVA",
         badgeClass:"badge-destaque",
-        pagina:"../base/individual.html?id=golden",
+        pagina:"individual.html?id=golden",
         imagem:"golden.png",
         classe:"img-golden",
         cta:{
@@ -375,7 +375,7 @@ const produtos = [
         categoria:"peliculas",
         badge:"ANTIREFLEXO",
         badgeClass:"badge-comum",
-        pagina:"../base/individual.html?id=uvfosca",
+        pagina:"individual.html?id=uvfosca",
         imagem:"uvfosca.png",
         classe:"img-uvfosca",
         cta:{
@@ -432,7 +432,7 @@ const produtos = [
         categoria:"peliculas",
         badge:"CRISTALINA",
         badgeClass:"badge-comum",
-        pagina:"../base/individual.html?id=uvhd",
+        pagina:"individual.html?id=uvhd",
         imagem:"uvhd.png",
         classe:"img-uvfosca",
         cta:{
@@ -490,7 +490,7 @@ const produtos = [
         categoria:"peliculas",
         badge:"PRIVACIDADE",
         badgeClass:"badge-comum",
-        pagina:"../base/individual.html?id=uvprivlisa",
+        pagina:"individual.html?id=uvprivlisa",
         imagem:"uvprivlisa.png",
         classe:"img-uvprivlisa",
         cta:{
@@ -552,7 +552,7 @@ const produtos = [
         categoria:"peliculas",
         badge:"PRIVACIDADE",
         badgeClass:"badge-comum",
-        pagina:"../base/individual.html?id=uvprivfosca",
+        pagina:"individual.html?id=uvprivfosca",
         imagem:"uvprivfosca.png",
         classe:"img-uvprivfosca",
         cta:{
@@ -620,7 +620,7 @@ const produtos = [
     ],
         badge:"ESSENCIAL",
         badgeClass:"badge-comum",
-        pagina:"../base/individual.html?id=maqb",
+        pagina:"individual.html?id=maqb",
         imagem:"maq.png",
         classe:"img-maqb",
         cta:{
@@ -776,7 +776,7 @@ const produtos = [
         categoria:"acessorios",
         badge:"WORKSTATION",
         pagina:"tapapoio-g.html",
-        imagem:"../imagens/",
+        imagem:"./assets/imagens/",
         classe:""
     },
 
@@ -786,7 +786,7 @@ const produtos = [
         categoria:"acessorios",
         badge:"PRECISÃO",
         pagina:"lamina.html",
-        imagem:"../imagens/",
+        imagem:"./assets/imagens/",
         classe:""
     },
  */

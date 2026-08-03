@@ -1,0 +1,96 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+}
+
+body{
+    background:#050505;
+    color:white;
+
+}
+
+html{
+    scroll-behavior:smooth;
+}
+    
+a{
+    text-decoration:none;
+    color:white;
+}
+
+
+    /* top cta */
+.back-to-top{
+    position:fixed;
+    right:25px;
+    bottom:85px; /* fica acima do WhatsApp */
+    width:45px;
+    height:45px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    background:#1b1b1b;
+    color:#fff;
+    text-decoration:none;
+    font-size:22px;
+    font-weight:bold;
+    border:1px solid rgba(255,255,255,.08);
+    box-shadow:0 8px 25px rgba(0,0,0,.35);
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(15px);
+    transition:.3s ease;
+    z-index:9998;
+}
+
+.back-to-top.show{
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
+}
+
+.back-to-top:hover{
+    background:#FF4E00;
+    color:#000;
+    transform:translateY(-3px);
+}
+
+
+    /* whatsapp cta */
+.whatsapp-float{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    background:#008b33;
+    height:45px;
+    width:45px;
+    border-radius:999px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+    transition:.3s ease;
+    color:white;
+    text-decoration:none;
+    z-index:9999;
+}
+
+.whatsapp-float p{
+    white-space:nowrap;
+    opacity:0;
+    width:0;
+    transition:.3s;
+}
+
+.whatsapp-float:hover{
+    width:180px;
+    gap:12px;
+}
+
+.whatsapp-float:hover p{
+    opacity:1;
+    width:auto;
+}

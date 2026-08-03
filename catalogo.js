@@ -14,14 +14,16 @@ if (breadcrumb) {
         <span>Catálogo</span>
     `;
 }
-        });
 
         // pesquisa de produtos/categorias
 const categoryButtons =
     document.querySelectorAll(".category");
+
 function filtrarProdutos(filter){
+
 const cards =
     document.querySelectorAll(".product-card");
+
     categoryButtons.forEach(btn => {
         btn.classList.remove("active");
     if(btn.dataset.filter === filter){
@@ -48,8 +50,7 @@ const filter =
 const searchInput =
     document.querySelector("#search-products");
     if(searchInput){
-        searchInput.addEventListener("input", () => {
-
+        
     searchInput.addEventListener("input", () => {
 const termo =
     searchInput.value.toLowerCase();
@@ -69,33 +70,17 @@ const nome =
     });
 
 });
-});
-    }
-        produtos.forEach(produto => {
+};
 
-    // dropdown
-const dropdownLinks =
-    document.querySelectorAll(".dropdown-filter");
-    dropdownLinks.forEach(link => { 
-        link.addEventListener("click", (e) => {
-            e.preventDefault();
+const params = new URLSearchParams(window.location.search);
+const categoria = params.get("categoria");
 
-const filter = 
-    link.dataset.filter;
-const estaNaPaginaProdutos =
-    document.querySelector(".products-page");
-    if(estaNaPaginaProdutos){
-        filtrarProdutos(filter);
-        document
-        .querySelector("#produtos")
-        .scrollIntoView({
-            behavior:"smooth"
-        });
-    } else{
-        window.location.href =
-        `produtos.html?categoria=${filter}`;
-    }
-        }); 
+if (categoria) {
+    filtrarProdutos(categoria);
+
+    document.querySelector("#produtos").scrollIntoView({
+        behavior: "smooth"
     });
+}
 
 });

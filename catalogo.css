@@ -1,0 +1,116 @@
+    /* breadcrumb */
+.breadcrumb{
+    width:90%;
+    margin:10px 10px 8px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-top:35px;
+    color:#8a8a8a;
+}
+
+
+.products-page{
+    padding:60px 8%;
+    background:
+    radial-gradient(circle at top right,#ff4e0022,transparent 35%),
+    #050505;
+}
+
+.products-hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+    margin-bottom:70px;
+}
+
+.products-text{
+    max-width:650px;
+}
+
+.products-text h1{
+    font-size:72px;
+    line-height:1.1;
+    margin:20px 0;
+}
+
+.products-text p{
+    color:#9e9e9e;
+    font-size:18px;
+    line-height:1.7;
+}
+
+.hero-benefits{
+    display:flex;
+    gap:15px;
+    margin-top:35px;
+    flex-wrap:wrap;
+}
+
+.benefit{
+    background:#111;
+    border:1px solid #222;
+    padding:14px 20px;
+    border-radius:14px;
+}
+
+.products-hero-image img{
+    width:520px;
+    filter:drop-shadow(0 0 40px #ff4d0096);
+}
+
+/* categorias */
+
+.categories{
+    display:flex;
+    gap:20px;
+    margin-bottom:50px;
+    flex-wrap:wrap;
+}
+
+.category{
+    background:#111;
+    border:1px solid #222;
+    color:white;
+    padding:16px 28px;
+    border-radius:18px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.category:hover,
+.category.active{
+    background:#FF4E00;
+    color:black;
+}
+
+    /* grid */
+
+.products-grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:30px;
+}
+
+
+    /* parte da pesquisa */
+.search-products{
+    padding:16px 20px;
+    background:#111;
+    border:1px solid #222;
+    border-radius:18px;
+    color:white;
+    font-size:1rem;
+    outline:none;
+    transition:.3s;
+}
+
+.search-products:focus{
+    border-color:#FF4E00;
+    box-shadow:0 0 15px rgba(255,78,0,.25);
+}
+
+.search-products::placeholder{
+    color:#888;
+}

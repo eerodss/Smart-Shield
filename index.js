@@ -1,5 +1,4 @@
-
-/* parte do destaque */
+    // parte do destaque
 document.addEventListener("DOMContentLoaded", () => {
 const grid =
     document.querySelector(".featured-grid");
@@ -10,7 +9,7 @@ const destaques =
     );
 
 
-    /** animação bonitinha pra aparecer tudo */
+    // animação do reveal
 const reveals =
     document.querySelectorAll(".reveal");
 const observer =
@@ -27,7 +26,7 @@ reveals.forEach(item => {
     observer.observe(item);
 });
 
-    /** a parte para os produtos aparecem no destaque */
+    // a parte para os produtos aparecerem no destaque
 destaques.forEach(produto => {
 const rotacao =
     (Math.random() * 8 - 4).toFixed(1);
@@ -49,7 +48,7 @@ const rotacao =
 });
 
 
-    /** parte da distribuição das categorias */
+    // parte da distribuição das categorias
 document.querySelector("#distribuicao")
         .addEventListener("click", () =>{
             window.open(
@@ -57,42 +56,11 @@ document.querySelector("#distribuicao")
             );
         });
 
-
- /* eu acho que é pra parte das categorias, pra clicar nelas e ir pro html clicado, mas eu só acho */
-    document.querySelectorAll("#produtos")
-        .forEach(card => {
-    card.addEventListener("click", () => {
-const filtro =
-    card.dataset.filter;
-        window.location.href =
-        `produtos.html?categoria=${filtro}`;
-    });
-});
-
-
-    /** eu acho que na hora que clica pra voltar, esse js faz voltar na parte da página que tava antes */
-const filter = 
-    link.dataset.filter;
-const estaNaPaginaProdutos =
-    document.querySelector(".products-page");
-    if(estaNaPaginaProdutos){
-        filtrarProdutos(filter);
-        document
-        .querySelector("#produtos")
-        .scrollIntoView({
-            behavior:"smooth"
-        });
-    } else{
-        window.location.href =
-        `produtos.html?categoria=${filter}`;
-    }
-
-
-    /** aqui spa que é a pesquisa, mas sla, tem que testar */
+    // aqui spa que é a pesquisa, mas sla, tem que testar
 const params =
     new URLSearchParams(window.location.search);
 const categoria =
-    parms.get("categoria");
+    params.get("categoria");
         if(categoria){
             filtrarProdutos(categoria);
             document 
@@ -101,3 +69,15 @@ const categoria =
                 behavior:"smooth" 
             });
         };
+
+    document.querySelectorAll(".categoria-card")
+.forEach(card => {
+
+    card.addEventListener("click", () => {
+
+        const filtro = card.dataset.filter;
+
+        window.location.href =
+            `produtos.html?categoria=${filtro}`;
+    });
+});

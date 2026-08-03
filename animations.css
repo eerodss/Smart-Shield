@@ -1,0 +1,41 @@
+    /* animação de reveal subindo */
+.reveal{
+    opacity:0;
+    transform:translateY(50px);
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+}
+
+.reveal.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.reveal-scale{
+    opacity:0;
+    transform:scale(.8);
+    transition:.8s ease;
+}
+
+.reveal-scale.show{
+    opacity:1;
+    transform:scale(1);
+}
+
+    /* parte do delay do reveal */
+.delay-1{
+    transition-delay:.1s;
+}
+
+.delay-2{
+    transition-delay:.2s;
+}
+
+.delay-3{
+    transition-delay:.3s;
+}
+
+.delay-4{
+    transition-delay:.4s;
+}

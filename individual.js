@@ -8,6 +8,7 @@ const id =
 const produto =
     produtos.find(p => String(p.id) === id);
 window.produtoAtual = produto;
+    criarBreadcrumb();
 
 const nomesCategorias = {
     peliculas: "Películas",
@@ -16,27 +17,6 @@ const nomesCategorias = {
     limpeza: "Limpeza"
 };
 
-    // breadcrumb
-const breadcrumb = document.querySelector("#breadcrumb");
-
-if (breadcrumb) {
-    breadcrumb.innerHTML = `
-        <a href="index.html">Início</a>
-        <span>›</span>
-        <a href="produtos.html">Catálogo</a>
-        <span>›</span>
-        <a href="produtos.html?categoria=${produto.categoria}">
-            ${nomesCategorias[produto.categoria]}
-        </a>
-        <span>›</span>
-        <span>${produto.nome}</span>
-    `;
-}
-
-    if(!produto){
-    console.error("Produto não encontrado");
-    return;
-}
 
     // aquela parte de clicar na disponibilidade/soliciar orçamento
 document.title =
@@ -108,51 +88,16 @@ const container =
     <h2>Você também pode gostar de</h2>
     <div class="related-grid"></div>
 </section>
+
+
+<a href='${whatsappLink}' class="whatsapp-float" target="_blank">
+    <svg viewBox="0 0 32 32" width="22" height="22" fill="currentColor">
+        <path d="M16 .4C7.4.4.4 7.3.4 15.9c0 2.8.7 5.5 2.1 7.9L0 32l8.4-2.2c2.3 1.3 4.9 2 7.6 2 8.6 0 15.6-6.9 15.6-15.5S24.6.4 16 .4zm8.9 22.2c-.4 1-2.2 2-3.1 2.1-.8.1-1.8.2-5.9-1.4-5.2-2.1-8.5-7.2-8.8-7.5-.3-.4-2.1-2.8-2.1-5.3s1.3-3.8 1.8-4.4c.5-.5 1-.7 1.3-.7h1c.3 0 .8-.1 1.2.8.4.9 1.4 3.3 1.5 3.6.1.3.2.7 0 1.1-.2.4-.3.7-.6 1-.3.3-.6.7-.8.9-.3.3-.5.7-.2 1.2.3.5 1.3 2.1 2.9 3.4 2 1.8 3.6 2.4 4.2 2.7.5.2.9.2 1.2-.2.4-.4 1.5-1.8 1.9-2.4.4-.6.8-.5 1.3-.3.5.2 3.3 1.5 3.9 1.8.5.3.9.4 1 .6.1.2.1 1.2-.3 2.2z"/>
+    </svg>
+    <p>Fale Conosco</p>
+</a>
 `;
 
-    // dropdown
-const dropdownLinks =
-    document.querySelectorAll(".dropdown-filter");
-    dropdownLinks.forEach(link => { 
-        link.addEventListener("click", (e) => {
-            e.preventDefault();
-
-const filter = 
-    link.dataset.filter;
-const estaNaPaginaProdutos =
-    document.querySelector(".products-page");
-    if(estaNaPaginaProdutos){
-        filtrarProdutos(filter);
-        document
-        .querySelector("#produtos")
-        .scrollIntoView({
-            behavior:"smooth"
-        });
-    } else{
-        window.location.href =
-        `produtos.html?categoria=${filter}`;
-    }
-        }); 
-    });
-    
-    // voltar pro topo
-
-    const backToTop = document.querySelector("#backToTop");
-window.addEventListener("scroll", () => {
-    if(window.scrollY > 500){
-        backToTop.classList.add("show");
-    }else{
-        backToTop.classList.remove("show");
-    }
-});
-
-backToTop.addEventListener("click", (e) => {
-    e.preventDefault();
-    window.scrollTo({
-        top:0,
-        behavior:"smooth"
-    });
-});
 
             // animação das barras de estatísticas
 const statsSection = container.querySelector(".comparison");
@@ -198,6 +143,10 @@ const observer = new IntersectionObserver((entries, obs) => {
 
 observer.observe(statsSection);
 
+    if(!produto){
+    console.error("Produto não encontrado");
+    return;
+}
 
     // identificar os produtos relacionados
 const categoriasRelacionadas =

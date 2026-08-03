@@ -2,11 +2,11 @@ function criarBreadcrumb(){
     const breadcrumb = document.querySelector("#breadcrumb");
 
     if(!breadcrumb) return;
+
     let html = `
-        <a href="index.html">Início</a>
+        <a href="./index.html">Início</a>
     `;
 
-    // Página catálogo
     if(document.querySelector(".products-page")){
         html += `
             <span class="separator">></span>
@@ -14,9 +14,8 @@ function criarBreadcrumb(){
         `;
     }
 
-    // Página individual
     if(window.produtoAtual){
-
+        const produto = window.produtoAtual;
         const categorias = {
             peliculas:"Películas",
             maquinas:"Máquinas",
@@ -29,11 +28,12 @@ function criarBreadcrumb(){
             <a href="produtos.html">Catálogo</a>
 
             <span class="separator">></span>
-            <span>${categorias[produtoAtual.categoria] || produtoAtual.categoria}</span>
+            <a href="produtos.html?categoria=${produto.categoria}">${categorias[produto.categoria]}</a>
 
             <span class="separator">></span>
-            <span>${produtoAtual.nome}</span>
+            <span>${produto.nome}</span>
         `;
     }
+
     breadcrumb.innerHTML = html;
 }

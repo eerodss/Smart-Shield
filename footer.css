@@ -1,0 +1,40 @@
+footer{
+    padding:40px 8%;
+    border-top:1px solid rgba(255,255,255,0.08);
+}
+
+.topo-footer{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.logo-footer{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo-footer img{
+    width:25px;
+    height:25px;
+    object-fit:contain;
+}
+
+.logo-footer span{
+    font-size:20px;
+    font-weight:700;
+    color:#fc5b16;
+}
+
+.copyright{
+    color:#8a8a8a;
+    font-weight:700;
+    margin:0;
+}
+
+.info-footer{
+    line-height:1.8;
+    font-size:0.9rem;
+}
