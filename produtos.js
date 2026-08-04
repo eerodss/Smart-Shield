@@ -63,7 +63,7 @@ const produtos = [
         classe:"img-japonesa",
         cta:{
         titulo:"A escolha ideal para quem busca privacidade, acabamento premium e a melhor experiência de proteção disponível.",
-        botao:"Soliciar orçamento"
+        botao:"Solicitar Informações"
 },
         features:[
             {

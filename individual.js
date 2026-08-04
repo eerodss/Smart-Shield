@@ -8,6 +8,24 @@ const id =
 const produto =
     produtos.find(p => String(p.id) === id);
 window.produtoAtual = produto;
+
+    // produto não encontrado: mostra aviso e para por aqui
+if(!produto){
+    console.error("Produto não encontrado");
+    const container = document.querySelector("#produto-container");
+    if(container){
+        container.innerHTML = `
+            <section class="produto-nao-encontrado">
+                <h1>Produto não encontrado</h1>
+                <p>O produto que você procura não existe ou foi removido.</p>
+                <a href="produtos.html" class="btn primary">Ver Catálogo</a>
+            </section>
+        `;
+    }
+    document.title = "Produto não encontrado | Smart Shield";
+    return;
+}
+
     criarBreadcrumb();
 
 const nomesCategorias = {
@@ -142,11 +160,6 @@ const observer = new IntersectionObserver((entries, obs) => {
 });
 
 observer.observe(statsSection);
-
-    if(!produto){
-    console.error("Produto não encontrado");
-    return;
-}
 
     // identificar os produtos relacionados
 const categoriasRelacionadas =

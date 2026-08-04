@@ -1,4 +1,4 @@
-    /* breadcrumb */
+/* breadcrumb */
 .breadcrumb{
     width:90%;
     margin:100px auto 0;
@@ -8,7 +8,6 @@
     gap:10px;
     color:#8a8a8a;
 }
-
 
     /* relacionados */
 .related-products{
@@ -286,6 +285,27 @@
 
 .cta button:hover{
     transform:translateY(-3px);
+}
+
+    /* produto não encontrado */
+.produto-nao-encontrado{
+    min-height:60vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:120px 20px 60px;
+    gap:16px;
+}
+
+.produto-nao-encontrado h1{
+    font-size:2.2rem;
+}
+
+.produto-nao-encontrado p{
+    color:#8a8a8a;
+    max-width:420px;
 }
 
     /* responsivo */

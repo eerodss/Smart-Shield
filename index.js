@@ -1,4 +1,4 @@
-    // parte do destaque
+// parte do destaque
 document.addEventListener("DOMContentLoaded", () => {
 const grid =
     document.querySelector(".featured-grid");
@@ -56,27 +56,10 @@ document.querySelector("#distribuicao")
             );
         });
 
-    // aqui spa que é a pesquisa, mas sla, tem que testar
-const params =
-    new URLSearchParams(window.location.search);
-const categoria =
-    params.get("categoria");
-        if(categoria){
-            filtrarProdutos(categoria);
-            document 
-            .querySelector("#produtos") 
-            .scrollIntoView({ 
-                behavior:"smooth" 
-            });
-        };
-
     document.querySelectorAll(".categoria-card")
 .forEach(card => {
-
     card.addEventListener("click", () => {
-
         const filtro = card.dataset.filter;
-
         window.location.href =
             `produtos.html?categoria=${filtro}`;
     });
