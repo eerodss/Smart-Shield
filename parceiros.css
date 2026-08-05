@@ -150,7 +150,148 @@
 
 /* FORMULÁRIO */
 
+.formulario{
+    width:min(760px,90%);
+    margin:120px auto;
+}
 
+.formulario h2{
+    text-align:center;
+    font-size:40px;
+}
+
+.formulario-sub{
+    text-align:center;
+    color:#bdbdbd;
+    margin:14px auto 50px;
+    max-width:520px;
+}
+
+.form-parceiro{
+    display:flex;
+    flex-direction:column;
+    gap:26px;
+    background:#111;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    padding:40px;
+}
+
+.form-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.form-group label{
+    font-weight:600;
+    font-size:.95rem;
+    color:#d6d6d6;
+}
+
+.form-parceiro input[type="text"],
+.form-parceiro select{
+    background:#181818;
+    border:1px solid #292929;
+    color:#fff;
+    padding:14px 16px;
+    border-radius:12px;
+    font-size:1rem;
+    outline:none;
+    transition:.3s;
+    appearance:none;
+    -webkit-appearance:none;
+}
+
+.form-parceiro select:disabled{
+    opacity:.5;
+    cursor:not-allowed;
+}
+
+.form-parceiro input[type="text"]:focus,
+.form-parceiro select:focus{
+    border-color:#ff4e00;
+    box-shadow:0 0 15px rgba(255,78,0,.25);
+}
+
+.opcoes-interesse{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.checkbox-opcao{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    background:#181818;
+    border:1px solid #292929;
+    border-radius:12px;
+    padding:14px 16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.checkbox-opcao:has(input:checked){
+    border-color:#ff4e00;
+    background:#241a12;
+}
+
+.checkbox-opcao input{
+    width:18px;
+    height:18px;
+    accent-color:#ff4e00;
+    cursor:pointer;
+}
+
+.subopcoes{
+    border-left:2px solid #ff4e00;
+    padding-left:20px;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.subopcoes h4{
+    color:#ff4e00;
+    font-size:1rem;
+}
+
+.btn-enviar{
+    border:none;
+    background:#ff4e00;
+    color:#fff;
+    padding:16px 28px;
+    border-radius:12px;
+    font-weight:700;
+    font-size:1rem;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn-enviar:hover{
+    transform:translateY(-3px);
+}
+
+.form-aviso{
+    text-align:center;
+    font-size:.9rem;
+    min-height:20px;
+}
+
+.form-aviso.erro{
+    color:#ff4e4e;
+}
+
+.form-aviso.sucesso{
+    color:#4eff8a;
+}
 
 /* FAQ */
 
@@ -226,5 +367,17 @@
 
 .steps{
     gap:45px;
+}
+
+.formulario{
+    margin:80px auto;
+}
+
+.form-parceiro{
+    padding:26px;
+}
+
+.form-row{
+    grid-template-columns:1fr;
 }
 }

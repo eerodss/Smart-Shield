@@ -174,6 +174,122 @@
 
 <!-- FORMULÁRIO -->
 
+<section class="formulario" id="cadastro">
+
+    <h2>Cadastre-se para ser um parceiro</h2>
+    <p class="formulario-sub">
+        Preencha os dados abaixo e nossa equipe entra em contato com você.
+    </p>
+
+    <form id="formParceiro" class="form-parceiro">
+
+        <div class="form-group">
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="estado">Estado</label>
+                <select id="estado" name="estado" required>
+                    <option value="" disabled selected>Selecione o estado</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="cidade">Cidade</label>
+                <select id="cidade" name="cidade" required disabled>
+                    <option value="" disabled selected>Selecione o estado primeiro</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>O que você precisa?</label>
+            <div class="opcoes-interesse">
+                <label class="checkbox-opcao">
+                    <input type="checkbox" name="interesse" value="aluguel" data-alvo="sub-aluguel">
+                    <span>Máquina de aluguel (bloqueada)</span>
+                </label>
+                <label class="checkbox-opcao">
+                    <input type="checkbox" name="interesse" value="venda" data-alvo="sub-venda">
+                    <span>Máquina de venda (desbloqueada)</span>
+                </label>
+                <label class="checkbox-opcao">
+                    <input type="checkbox" name="interesse" value="insumos" data-alvo="sub-insumos">
+                    <span>Insumos / Acessórios</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="subopcoes" id="sub-aluguel" hidden>
+            <h4>Máquina de aluguel</h4>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="aluguel-qtd">Quantidade desejada</label>
+                    <select id="aluguel-qtd" name="aluguel-qtd">
+                        <option value="1 máquina">1 máquina</option>
+                        <option value="2 máquinas">2 máquinas</option>
+                        <option value="3 máquinas">3 máquinas</option>
+                        <option value="4 ou mais">4 ou mais</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="aluguel-prazo">Prazo de contrato</label>
+                    <select id="aluguel-prazo" name="aluguel-prazo">
+                        <option value="12 meses">12 meses</option>
+                        <option value="24 meses">24 meses</option>
+                        <option value="36 meses">36 meses</option>
+                        <option value="48 meses">48 meses</option>
+                        <option value="60 meses">60 meses</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="subopcoes" id="sub-venda" hidden>
+            <h4>Máquina de venda</h4>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="venda-qtd">Quantidade desejada</label>
+                    <select id="venda-qtd" name="venda-qtd">
+                        <option value="1 máquina">1 máquina</option>
+                        <option value="2 máquinas">2 máquinas</option>
+                        <option value="3 ou mais">3 ou mais</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="venda-pagamento">Forma de pagamento de interesse</label>
+                    <select id="venda-pagamento" name="venda-pagamento">
+                        <option value="PIX à vista">PIX à vista</option>
+                        <option value="Cartão parcelado">Cartão parcelado (6x)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="subopcoes" id="sub-insumos" hidden>
+            <h4>Insumos / Acessórios</h4>
+            <div class="opcoes-interesse">
+                <label class="checkbox-opcao">
+                    <input type="checkbox" name="insumo-tipo" value="Películas">
+                    <span>Películas</span>
+                </label>
+                <label class="checkbox-opcao">
+                    <input type="checkbox" name="insumo-tipo" value="Produtos de limpeza">
+                    <span>Produtos de limpeza</span>
+                </label>
+                <label class="checkbox-opcao">
+                    <input type="checkbox" name="insumo-tipo" value="Acessórios (tapete, etc)">
+                    <span>Acessórios (tapete, etc)</span>
+                </label>
+            </div>
+        </div>
+
+        <button type="submit" class="btn-enviar">Enviar cadastro</button>
+        <p class="form-aviso" id="formAviso"></p>
+    </form>
+</section>
 
 
 <!-- FAQ -->
@@ -265,9 +381,40 @@
 </section>
 
 <footer>
-    <!-- mesmo footer -->
+    <div class="topo-footer">
+        <div class="logo-footer">
+            <img src="smartlogo.png" alt="Smart Shield">
+            <span>Smart Shield</span>
+        </div>
+        <p class="copyright">© 2026 Todos os direitos reservados.</p>
+    </div>
+    <div class="info-footer">
+        <p>
+            Av. Artur M. Tomás, 1312 - Zona 6<br>
+            Cianorte - PR, CEP 87205-050<br>
+            CNPJ 45.656.001/0001-27
+        </p>
+    </div>
 </footer>
 
+<a href="https://wa.me/554499485216?text=Olá!%20Vim%20pelo%20site%20da%20Smart%20Shield." class="whatsapp-float" target="_blank">
+    <svg viewBox="0 0 32 32" width="22" height="22" fill="currentColor">
+        <path d="M16 .4C7.4.4.4 7.3.4 15.9c0 2.8.7 5.5 2.1 7.9L0 32l8.4-2.2c2.3 1.3 4.9 2 7.6 2 8.6 0 15.6-6.9 15.6-15.5S24.6.4 16 .4zm8.9 22.2c-.4 1-2.2 2-3.1 2.1-.8.1-1.8.2-5.9-1.4-5.2-2.1-8.5-7.2-8.8-7.5-.3-.4-2.1-2.8-2.1-5.3s1.3-3.8 1.8-4.4c.5-.5 1-.7 1.3-.7h1c.3 0 .8-.1 1.2.8.4.9 1.4 3.3 1.5 3.6.1.3.2.7 0 1.1-.2.4-.3.7-.6 1-.3.3-.6.7-.8.9-.3.3-.5.7-.2 1.2.3.5 1.3 2.1 2.9 3.4 2 1.8 3.6 2.4 4.2 2.7.5.2.9.2 1.2-.2.4-.4 1.5-1.8 1.9-2.4.4-.6.8-.5 1.3-.3.5.2 3.3 1.5 3.9 1.8.5.3.9.4 1 .6.1.2.1 1.2-.3 2.2z"/>
+    </svg>
+    <p>Fale Conosco</p>
+</a>
+
+<a href="#" class="back-to-top" id="backToTop">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+        <path d="M12 19V5M12 5L5 12M12 5L19 12"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"/>
+    </svg>
+</a>
+
+<script src="main.js"></script>
 <script src="parceiros.js"></script>
 
 </body>
