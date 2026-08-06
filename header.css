@@ -1,4 +1,4 @@
-    /* header */
+/* header */
 header{
     position:fixed;
     top:10px;
@@ -101,6 +101,114 @@ nav a:hover{
 
 #produtos{
     scroll-margin-top:120px;
+}
+
+    /* botão hamburguer */
+.menu-toggle{
+    display:none;
+    flex-direction:column;
+    justify-content:center;
+    gap:5px;
+    width:32px;
+    height:32px;
+    background:none;
+    border:none;
+    cursor:pointer;
+    padding:0;
+    z-index:1001;
+}
+
+.menu-toggle span{
+    display:block;
+    width:100%;
+    height:2px;
+    background:#fff;
+    border-radius:2px;
+    transition:.3s;
+}
+
+.menu-toggle.open span:nth-child(1){
+    transform:translateY(7px) rotate(45deg);
+}
+
+.menu-toggle.open span:nth-child(2){
+    opacity:0;
+}
+
+.menu-toggle.open span:nth-child(3){
+    transform:translateY(-7px) rotate(-45deg);
+}
+
+    /* responsivo */
+@media(max-width:860px){
+
+    header{
+        width:92%;
+        padding:14px 20px;
+        flex-wrap:wrap;
+    }
+
+    .menu-toggle{
+        display:flex;
+    }
+
+    nav{
+        width:100%;
+        max-height:0;
+        overflow:hidden;
+        transition:max-height .35s ease;
+    }
+
+    nav.open{
+        max-height:70vh;
+        overflow-y:auto;
+        margin-top:18px;
+    }
+
+    .menu{
+        flex-direction:column;
+        gap:4px;
+        width:100%;
+    }
+
+    .menu > li{
+        width:100%;
+    }
+
+    .menu > li > a{
+        display:block;
+        padding:12px 4px;
+        border-top:1px solid rgba(255,255,255,0.06);
+    }
+
+    .dropdown-menu{
+        position:static;
+        opacity:1;
+        visibility:visible;
+        max-height:0;
+        overflow:hidden;
+        background:transparent;
+        backdrop-filter:none;
+        -webkit-backdrop-filter:none;
+        border:none;
+        box-shadow:none;
+        transition:max-height .3s ease;
+        padding-left:14px;
+    }
+
+    .dropdown.open .dropdown-menu{
+        max-height:300px;
+    }
+
+    .dropdown:hover .dropdown-menu{
+        background:transparent;
+        backdrop-filter:none;
+        -webkit-backdrop-filter:none;
+    }
+
+    .dropdown-menu a{
+        padding:10px 20px;
+    }
 }
 
     /* breadcrumb */

@@ -14,7 +14,9 @@ const rotacao = (Math.random() * 8 - 4).toFixed(1);
 
             <div class="product-image">
                 <img src="${produto.imagem}"
-                    class="${produto.classe}">
+                    class="${produto.classe}"
+                    alt="${produto.nome}"
+                    loading="lazy">
             </div>
 
             <div class="product-info">
@@ -33,4 +35,3 @@ const rotacao = (Math.random() * 8 - 4).toFixed(1);
         </div>
     `;
 };
-

@@ -253,7 +253,6 @@
 .subopcoes{
     border-left:2px solid #ff4e00;
     padding-left:20px;
-    display:flex;
     flex-direction:column;
     gap:18px;
 }

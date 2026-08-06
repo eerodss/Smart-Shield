@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="footer.css">
 <link rel="stylesheet" href="cards.css">
 <link rel="stylesheet" href="catalogo.css">
+<link rel="stylesheet" href="animations.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" href="fav.png">
 </head>
@@ -19,6 +20,12 @@
         <img src="smartlogo.png" alt="Logo da Smart">
         <span>SMART SHIELD</span>
     </div>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
 
     <nav>
         <!-- menu lá -->
@@ -66,7 +73,7 @@
                     Instagram </a>
             </li>
             <li>
-                <a href="parceiros.html" target="_blank">
+                <a href="parceiros.html">
                     Seja um Parceiro </a>
             </li>
         </ul>
@@ -102,7 +109,7 @@
         </div>
 
         <div class="products-hero-image">
-            <img src="smart01.jpg" alt="Foto da amostra">
+            <img src="smart01.webp" alt="Foto da amostra">
         </div>
     </div>
 
@@ -111,7 +118,7 @@
 
     <!-- categorias -->
     <div class="categories" id="produtos">
-        <button class="category active" data-filter="all">
+        <button class="category active " data-filter="all">
             Todos
         </button>
 
@@ -135,7 +142,7 @@
     </div>
 
     <!-- PRODUTOS -->
-    <div class="products-grid"></div>
+    <div class="products-grid revealX"></div>
 
 </section>
 

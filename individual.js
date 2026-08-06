@@ -53,7 +53,7 @@ const container =
 
 <section class="hero">
     <div class="hero-image">
-        <img src="${produto.imagem}">
+        <img src="${produto.imagem}" alt="${produto.nome}">
     </div>
     <div class="hero-content">
         <span class="badge ${produto.badgeClass}">${produto.badge}</span> 

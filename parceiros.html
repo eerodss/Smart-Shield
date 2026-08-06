@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Seja um Parceiro | Smart Shield</title>
+<link rel="stylesheet" href="animations.css">
 <link rel="stylesheet" href="global.css">
 <link rel="stylesheet" href="parceiros.css">
 <link rel="stylesheet" href="header.css">
@@ -20,6 +21,12 @@
         <img src="smartlogo.png" alt="Logo da Smart">
         <span>SMART SHIELD</span>
     </div>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
 
     <nav>
         <!-- header -->
@@ -67,7 +74,7 @@
                     Instagram </a>
             </li>
             <li>
-                <a href="parceiros.html" target="_blank">
+                <a href="parceiros.html">
                     Seja um Parceiro </a>
             </li>
         </ul>
@@ -95,7 +102,7 @@
             contando com suporte especializado e materiais exclusivos para impulsionar seu negócio.
         </p>
 
-        <a href="#cadastro" class="cta">
+        <a href="#cadastro" class="cta reveal" data-delay="50">
             Quero ser um Parceiro
         </a>
     </div>
@@ -110,25 +117,25 @@
 
     <div class="beneficios-grid">
 
-        <div class="beneficio">
+        <div class="beneficio reveal" data-delay="0">
             🚀
             <h3>Produtos Premium</h3>
             <p>Linha completa de películas e acessórios.</p>
         </div>
 
-        <div class="beneficio">
+        <div class="beneficio reveal" data-delay="100">
             🤝
             <h3>Suporte Especializado</h3>
             <p>Equipe preparada para ajudar você diariamente.</p>
         </div>
 
-        <div class="beneficio">
+        <div class="beneficio reveal" data-delay="200">
             📈
             <h3>Marketing</h3>
             <p>Materiais prontos para divulgação da sua loja.</p>
         </div>
 
-        <div class="beneficio">
+        <div class="beneficio reveal" data-delay="300">
             ⚙️
             <h3>Máquinas Smart</h3>
             <p>Modelos bloqueados e desbloqueados.</p>
@@ -145,25 +152,25 @@
 
     <div class="steps">
 
-        <div class="step">
+        <div class="step revealX" data-delay="0">
             <span>1</span>
             <h3>Cadastro</h3>
             <p>Preencha o formulário.</p>
         </div>
 
-        <div class="step">
+        <div class="step revealX" data-delay="100">
             <span>2</span>
             <h3>Análise</h3>
             <p>Nossa equipe analisa seu perfil.</p>
         </div>
 
-        <div class="step">
+        <div class="step revealX" data-delay="200">
             <span>3</span>
             <h3>Contato</h3>
             <p>Entramos em contato rapidamente.</p>
         </div>
 
-        <div class="step">
+        <div class="step revealX" data-delay="300">
             <span>4</span>
             <h3>Parceria</h3>
             <p>Você começa a vender Smart Shield.</p>
@@ -176,7 +183,7 @@
 
 <section class="formulario" id="cadastro">
 
-    <h2>Cadastre-se para ser um parceiro</h2>
+    <h2>Cadastre-se para ser parceiro</h2>
     <p class="formulario-sub">
         Preencha os dados abaixo e nossa equipe entra em contato com você.
     </p>
@@ -230,8 +237,7 @@
                     <select id="aluguel-qtd" name="aluguel-qtd">
                         <option value="1 máquina">1 máquina</option>
                         <option value="2 máquinas">2 máquinas</option>
-                        <option value="3 máquinas">3 máquinas</option>
-                        <option value="4 ou mais">4 ou mais</option>
+                        <option value="3 ou mais">3 ou mais</option>
                     </select>
                 </div>
                 <div class="form-group">
@@ -262,7 +268,7 @@
                     <label for="venda-pagamento">Forma de pagamento de interesse</label>
                     <select id="venda-pagamento" name="venda-pagamento">
                         <option value="PIX à vista">PIX à vista</option>
-                        <option value="Cartão parcelado">Cartão parcelado (6x)</option>
+                        <option value="Cartão parcelado">Cartão parcelado</option>
                     </select>
                 </div>
             </div>
@@ -277,11 +283,11 @@
                 </label>
                 <label class="checkbox-opcao">
                     <input type="checkbox" name="insumo-tipo" value="Produtos de limpeza">
-                    <span>Produtos de limpeza</span>
+                    <span>Materiais para aplicação</span>
                 </label>
                 <label class="checkbox-opcao">
                     <input type="checkbox" name="insumo-tipo" value="Acessórios (tapete, etc)">
-                    <span>Acessórios (tapete, etc)</span>
+                    <span>Cabos e Carregadores</span>
                 </label>
             </div>
         </div>
@@ -299,7 +305,7 @@
 
     <div class="faq-container">
 
-        <div class="faq-item">
+        <div class="faq-item revealX" data-delay="0">
             <button class="faq-question">
                 Preciso ter CNPJ?
                 <span>+</span>
@@ -312,7 +318,7 @@
             </div>
         </div>
 
-        <div class="faq-item">
+        <div class="faq-item revealX" data-delay="100">
             <button class="faq-question">
                 Existe pedido mínimo?
                 <span>+</span>
@@ -325,7 +331,7 @@
             </div>
         </div>
 
-        <div class="faq-item">
+        <div class="faq-item revealX" data-delay="200">
             <button class="faq-question">
                 Quanto tempo leva a análise?
                 <span>+</span>
@@ -338,7 +344,7 @@
             </div>
         </div>
 
-        <div class="faq-item">
+        <div class="faq-item revealX" data-delay="300">
             <button class="faq-question">
                 A Smart Shield fornece treinamento?
                 <span>+</span>
@@ -351,7 +357,7 @@
             </div>
         </div>
 
-        <div class="faq-item">
+        <div class="faq-item revealX" data-delay="300">
             <button class="faq-question">
                 Como funciona o suporte técnico?
                 <span>+</span>
@@ -364,7 +370,7 @@
             </div>
         </div>
 
-        <div class="faq-item">
+        <div class="faq-item revealX" data-delay="300">
             <button class="faq-question">
                 Quais formas de pagamento são aceitas?
                 <span>+</span>

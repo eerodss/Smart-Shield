@@ -94,7 +94,6 @@ if(selectEstado && selectCidade){
     // mostrar/esconder subopções de acordo com o interesse marcado
 const checkboxesInteresse =
     document.querySelectorAll('input[name="interesse"]');
-
 checkboxesInteresse.forEach(checkbox => {
     checkbox.addEventListener("change", () => {
         const alvo = document.querySelector(`#${checkbox.dataset.alvo}`);
@@ -103,6 +102,7 @@ checkboxesInteresse.forEach(checkbox => {
         }
     });
 });
+
 
     // envio do formulário (por enquanto via WhatsApp, sem banco de dados ainda)
 const formParceiro = document.querySelector("#formParceiro");

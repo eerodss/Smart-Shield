@@ -324,3 +324,79 @@
 .banner p{
     font-size:18px;
 }
+    /* responsivo */
+
+@media(max-width:900px){
+
+.breadcrumb{
+    margin:110px 6% 20px;
+}
+
+.hero{
+    flex-direction:column-reverse;
+    height:auto;
+    padding:150px 6% 60px;
+    text-align:center;
+    gap:40px;
+}
+
+.hero-text{
+    margin-top:0;
+    max-width:100%;
+}
+
+.hero-text h1{
+    font-size:44px;
+}
+
+.buttons{
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:340px;
+}
+
+.section{
+    padding:70px 6%;
+}
+
+.section-title{
+    font-size:32px;
+    text-align:center;
+}
+
+.featured-products{
+    padding:10px 6%;
+}
+
+.section-header h2{
+    font-size:2rem;
+}
+
+.banner{
+    margin:60px 6%;
+    padding:50px 30px;
+}
+
+.banner h2{
+    font-size:32px;
+}
+}
+
+@media(max-width:480px){
+
+.hero-text h1{
+    font-size:34px;
+}
+
+.buttons{
+    flex-direction:column;
+}
+
+.btn{
+    text-align:center;
+}
+}

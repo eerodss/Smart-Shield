@@ -1,4 +1,4 @@
-    /* breadcrumb */
+/* breadcrumb */
 .breadcrumb{
     width:90%;
     margin:10px 10px 8px;
@@ -113,4 +113,65 @@
 
 .search-products::placeholder{
     color:#888;
+}
+    /* responsivo */
+
+@media(max-width:900px){
+
+.products-page{
+    padding:60px 6%;
+}
+
+.products-hero{
+    flex-direction:column;
+    text-align:center;
+    gap:30px;
+    margin-bottom:50px;
+}
+
+.products-text{
+    max-width:100%;
+}
+
+.products-text h1{
+    font-size:40px;
+}
+
+.hero-benefits{
+    justify-content:center;
+}
+
+.products-hero-image img{
+    width:100%;
+    max-width:300px;
+}
+
+.categories{
+    gap:12px;
+}
+
+.category{
+    padding:12px 18px;
+    font-size:.9rem;
+}
+
+.search-products{
+    width:100%;
+}
+
+.products-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+}
+}
+
+@media(max-width:560px){
+
+.products-text h1{
+    font-size:32px;
+}
+
+.products-grid{
+    grid-template-columns:1fr;
+}
 }

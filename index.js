@@ -8,24 +8,6 @@ const destaques =
         produto => produto.destaque
     );
 
-
-    // animação do reveal
-const reveals =
-    document.querySelectorAll(".reveal");
-const observer =
-    new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if(entry.isIntersecting){
-                entry.target.classList.add("show");
-            }
-        });
-    },{
-        threshold:0.15
-    });
-reveals.forEach(item => {
-    observer.observe(item);
-});
-
     // a parte para os produtos aparecerem no destaque
 destaques.forEach(produto => {
 const rotacao =
@@ -36,7 +18,7 @@ const rotacao =
             style="--hover-rotate:${rotacao}deg;"
             onclick="window.location.href='individual.html?id=${produto.id}'">
             <span class="badge ${produto.badgeClass}">${produto.badge}</span>
-            <img src="${produto.imagem}">
+            <img src="${produto.imagem}" alt="${produto.nome}" loading="lazy">
             <h3>${produto.nome}</h3>
             <div class="description-wrapper"
                 data-full="${produto.descricao}">
