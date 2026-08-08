@@ -172,7 +172,7 @@
     flex-direction:column;
     gap:26px;
     background:#111;
-    border:1px solid rgba(255,255,255,.08);
+    border:1px solid rgba(104, 1, 1, 0.08);
     border-radius:20px;
     padding:40px;
 }

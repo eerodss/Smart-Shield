@@ -128,40 +128,72 @@ if(formParceiro){
             return;
         }
 
-        let mensagem =
-            `Olá! Quero ser um parceiro Smart Shield.\n` +
-            `Nome: ${nome}\n` +
-            `Estado: ${estado}\n` +
-            `Cidade: ${cidade}\n`;
+        const dados = {
+    nome,
+    contato,
+    estado,
+    cidade,
 
-        if(interesses.includes("aluguel")){
-            const qtd = document.querySelector("#aluguel-qtd").value;
-            const prazo = document.querySelector("#aluguel-prazo").value;
-            mensagem +=
-                `Interesse: Máquina de aluguel (bloqueada) - ${qtd}, contrato de ${prazo}\n`;
-        }
+    interesses: interesses.join(", "),
 
-        if(interesses.includes("venda")){
-            const qtd = document.querySelector("#venda-qtd").value;
-            const pagamento = document.querySelector("#venda-pagamento").value;
-            mensagem +=
-                `Interesse: Máquina de venda (desbloqueada) - ${qtd}, pagamento: ${pagamento}\n`;
-        }
+    aluguelQuantidade:
+        interesses.includes("aluguel")
+            ? document.querySelector("#aluguel-qtd").value
+            : "",
 
-        if(interesses.includes("insumos")){
-            const tiposInsumo =
-                Array.from(document.querySelectorAll('input[name="insumo-tipo"]:checked'))
-                    .map(c => c.value);
-            mensagem +=
-                `Interesse: Insumos/Acessórios - ${tiposInsumo.length ? tiposInsumo.join(", ") : "não especificado"}\n`;
-        }
+    aluguelPrazo:
+        interesses.includes("aluguel")
+            ? document.querySelector("#aluguel-prazo").value
+            : "",
 
-        const link =
-            `https://wa.me/554499485216?text=${encodeURIComponent(mensagem)}`;
-        window.open(link, "_blank");
+    vendaQuantidade:
+        interesses.includes("venda")
+            ? document.querySelector("#venda-qtd").value
+            : "",
 
-        formAviso.textContent =
-            "Abrindo o WhatsApp para finalizar seu cadastro...";
-        formAviso.className = "form-aviso sucesso";
-    });
+    vendaPagamento:
+        interesses.includes("venda")
+            ? document.querySelector("#venda-pagamento").value
+            : "",
+
+    insumos:
+        interesses.includes("insumos")
+            ? Array.from(document.querySelectorAll('input[name="insumo-tipo"]:checked'))
+                .map(c => c.value)
+                .join(", ")
+            : ""
+};
+
+    fetch("falta ele", {
+
+    method: "POST",
+
+    headers: {
+        "Content-Type": "application/json"
+    },
+
+    body: JSON.stringify(dados)
+
+})
+.then(() => {
+
+    formAviso.textContent =
+        "Cadastro enviado com sucesso!";
+
+    formAviso.className =
+        "form-aviso sucesso";
+
+    formParceiro.reset();
+
+})
+.catch(() => {
+
+    formAviso.textContent =
+        "Erro ao enviar o formulário.";
+
+    formAviso.className =
+        "form-aviso erro";
+
+});
+    })
 }

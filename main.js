@@ -98,3 +98,7 @@ const observerX =
         observerX.observe(reveal);
     }
 )
+
+    // footer
+const anoFooter = document.querySelector("#footer-year");
+if(anoFooter) anoFooter.textContent = new Date().getFullYear();

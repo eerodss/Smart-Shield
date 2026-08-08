@@ -7,6 +7,8 @@ footer{
     display:flex;
     justify-content:space-between;
     align-items:center;
+    flex-wrap:wrap;
+    gap:16px;
     margin-bottom:20px;
 }
 
@@ -28,6 +30,23 @@ footer{
     color:#fc5b16;
 }
 
+.footer-links{
+    display:flex;
+    gap:20px;
+    list-style:none;
+    flex-wrap:wrap;
+}
+
+.footer-links a{
+    color:#8a8a8a;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer-links a:hover{
+    color:#FF4E00;
+}
+
 .copyright{
     color:#8a8a8a;
     font-weight:700;
@@ -37,4 +56,17 @@ footer{
 .info-footer{
     line-height:1.8;
     font-size:0.9rem;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:16px;
+}
+
+@media(max-width:600px){
+    .topo-footer,
+    .info-footer{
+        flex-direction:column;
+        align-items:flex-start;
+        text-align:left;
+    }
 }
