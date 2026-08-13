@@ -400,5 +400,16 @@
     text-align:center;
 }
 
+.featured-card img{
+    transform:
+        translateX(35px);
+}
+
+.banner{
+    border-radius:30px;
+    background:
+    linear-gradient(135deg,#FF4E00,#ff7a41);
+    text-align:center;
+}
 
 }

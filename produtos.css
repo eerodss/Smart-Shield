@@ -124,9 +124,7 @@ html{
 
 .products-page{
     padding:60px 8%;
-    background:
-    radial-gradient(circle at top right,#ff4e0022,transparent 35%),
-    #050505;
+    background: #111;
 }
 
 .products-hero{
@@ -168,8 +166,8 @@ html{
 }
 
 .products-hero-image img{
-    width:520px;
-    filter:drop-shadow(0 0 40px #ff4d0096);
+    width:550px;
+    filter:drop-shadow(0 0 30px #491b07);
 }
 
 /* categorias */
