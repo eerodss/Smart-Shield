@@ -81,8 +81,8 @@
 }
 
 .hero-image img{
-    width:600px;
-    filter:drop-shadow(0 0 30px #792c0b);
+    width:550px;
+    filter:drop-shadow(0 0 30px #491b07);
 }
 
 .section{
@@ -399,4 +399,6 @@
 .btn{
     text-align:center;
 }
+
+
 }

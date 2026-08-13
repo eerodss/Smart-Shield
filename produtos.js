@@ -9,42 +9,54 @@ const produtos = [
         imagem:"",
         classe:""
     },
-
+ 
     {
         nome:"Película TPU Matte",
         descricao:"Acabamento fosco que reduz reflexos e proporciona um toque mais suave.",
         categoria:"peliculas",
         badge:"TOQUE FOSCO",
-        pagina:"tpumatte.html",
+        pagina:"individual.html?id=tpumatte",
         imagem:"",
         classe:""
     },
 
     {
+        id:"tpublue",
         nome:"Película TPU Anti-Blue",
         descricao:"Ajuda a reduzir a exposição à luz azul para maior conforto visual.",
+        subtitulo:"Película de proteção com tecnologia anti-luz azul, projetada para reduzir a fadiga ocular e melhorar o conforto visual durante o uso prolongado do dispositivo.",
         categoria:"peliculas",
         badge:"FILTRO AZUL",
-        pagina:"tpublue.html",
+        badgeClass:"",
+        pagina:"individual.html?id=tpublue",
         imagem:"",
         classe:""
+        cta:{
+        titulo:"Proteção contra a luz azul prejudicial, mantendo a qualidade da imagem e o conforto visual.",
+        botao:"Solicitar Informações"
+        },
     },
 
     {
+        id:"tpuprivfosca",
         nome:"Película TPU Privacidade Fosca",
         descricao:"Combina privacidade e acabamento fosco para mais conforto visual.",
+        subtitulo:"Película de privacidade com acabamento fosco, projetada para oferecer proteção visual eficiente e conforto durante o uso.",
         categoria:"peliculas",
         badge:"PRIVACIDADE FOSCA",
-        pagina:"tpuprivfosca.html",
+        badgeClass:"badge-destaque",
+        pagina:"individual.html?id=tpuprivfosca",
         imagem:"",
         classe:""
     },
 
-    {  nome:"Película TPU Privacidade Lisa",
+    {  id:"tpuprivlisa",
+        nome:"Película TPU Privacidade Lisa",
         descricao:"Proteção visual eficiente para manter o conteúdo da tela mais reservado.",
+        subtitulo:"Película de privacidade com acabamento liso, projetada para oferecer proteção visual eficiente e conforto durante o uso.",
         categoria:"peliculas",
         badge:"PRIVACIDADE",
-        pagina:"tpuprivfosca.html",
+        pagina:"individual.html?id=tpuprivlisa",
         imagem:"",
         classe:""
     },
@@ -226,7 +238,7 @@ const produtos = [
         descricao:"Acabamento fosco, proteção contra olhares laterais e regeneração para maior durabilidade.",
         categoria:"peliculas",
         badge:"EPU PREMIUM",
-        pagina:"basicmatte.html",
+        pagina:"individual.html?id=epufosca",
         imagem:"../imagens/películas/epufosca.png",
         classe:"img-epufosca"
     },
@@ -236,7 +248,7 @@ const produtos = [
         descricao:"Privacidade e tecnologia de regeneração que ajuda a manter a película sempre com ótima aparência.",
         categoria:"peliculas",
         badge:"EPU PREMIUM",
-        pagina:"basicmatte.html",
+        pagina:"individual.html?id=epulisa",
         imagem:"../imagens/películas/epufosca.png",
         classe:"img-epufosca"
     },
@@ -299,11 +311,12 @@ const produtos = [
     },
 /*
     {
+        id:"neolisa",
         nome:"Película Neogrip Lisa",
         descricao:"Maior aderência ao segurar o aparelho, reduzindo o risco de quedas.",
         categoria:"peliculas",
         badge:"ANTIDERRAPANTE",
-        pagina:"",
+        pagina:"individual.html?id=neolisa",
         imagem:"../imagens/películas/neogripfosco.png",
         classe:"img-neogripfosco"
     },

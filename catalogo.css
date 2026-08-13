@@ -53,11 +53,11 @@
     border:1px solid #222;
     padding:14px 20px;
     border-radius:14px;
-}
+}   
 
 .products-hero-image img{
     width:520px;
-    filter:drop-shadow(0 0 40px #ff4d0096);
+    filter:drop-shadow(0 0 40px #471a0696);
 }
 
 /* categorias */
