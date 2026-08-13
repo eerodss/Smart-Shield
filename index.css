@@ -330,6 +330,8 @@
 
 .breadcrumb{
     margin:110px 6% 20px;
+    flex-wrap:wrap;
+    font-size:.85rem;
 }
 
 .hero{

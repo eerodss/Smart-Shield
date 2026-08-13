@@ -19,7 +19,7 @@ window.addEventListener("scroll", () => {
 
     // menu mobile
 const menuToggle = document.querySelector("#menuToggle");
-const nav = document.querySelector("nav");
+const nav = document.querySelector("header nav");
 
 if(menuToggle && nav){
     menuToggle.addEventListener("click", () => {

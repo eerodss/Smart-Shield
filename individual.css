@@ -315,6 +315,8 @@
 .breadcrumb{
     margin:110px auto 0;
     padding:0 20px;
+    flex-wrap:wrap;
+    font-size:.85rem;
 }
 
 .hero{

@@ -563,8 +563,15 @@ footer{
 
 @media(max-width:900px){
 
+.breadcrumb{
+    width:100%;
+    flex-wrap:wrap;
+    font-size:.85rem;
+    margin:110px 0 20px;
+}
+
 .products-page{
-    padding:60px 6%;
+    padding:0 6% 60px;
 }
 
 .products-hero{
