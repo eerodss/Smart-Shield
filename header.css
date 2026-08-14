@@ -144,8 +144,9 @@ nav a:hover{
 
     header{
         width:92%;
-        padding:14px 20px;
+        padding:18px 40px;
         flex-wrap:wrap;
+        justify-content:space-between;
     }
 
     .menu-toggle{
