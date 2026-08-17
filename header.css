@@ -143,7 +143,7 @@ nav a:hover{
 @media(max-width:860px){
 
     header{
-        width:92%;
+        width:84%;
         padding:18px 40px;
         flex-wrap:wrap;
         justify-content:space-between;
