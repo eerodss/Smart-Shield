@@ -152,9 +152,9 @@ nav a:hover{
     .menu-toggle{
         display:flex;
     }
-
-    nav a{
-        object-fit: 2/3;
+   
+    .logo{
+        object-fit:3/4;
 
     header nav{
         width:100%;
